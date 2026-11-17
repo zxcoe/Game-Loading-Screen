@@ -1,0 +1,20 @@
+# Blender backup/autosave files
+*.blend1
+*.blend2
+*.blend@
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / web builds
+node_modules/
+dist/
+
+# OS / editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
