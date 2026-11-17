@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Loading Screen</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+
+  <div id="ui">
+    <header>
+      <h1 id="title"></h1>
+      <p id="hint">Drag to spin &middot; Scroll to zoom &middot; Click the model</p>
+    </header>
+
+    <footer>
+      <p id="tip"></p>
+      <div id="bar"><div id="fill"></div></div>
+      <div id="status">
+        <span id="label">Loading&hellip;</span>
+        <span id="percent">0%</span>
+      </div>
+      <button id="play" hidden>Play</button>
+    </footer>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
