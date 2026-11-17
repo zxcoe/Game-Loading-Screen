@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>ASTRA | Loading Screen Demo</title>
+<link rel="stylesheet" href="./style.css"/>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}</script>
+</head><body>
+<div class="app">
+ <div class="scanline"></div>
+ <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+ <header class="topbar">
+  <div class="brand"><span class="brand-symbol">✦</span><div><b>PROJECT // ASTRA</b><small>TACTICAL OPERATIVE SYSTEM</small></div></div>
+  <span class="top-status"><i></i> MODEL // ASTRA 01</span>
+  <div class="top-actions"><button id="reset" title="Reset camera">↺</button><button id="sound" title="Sound disabled" aria-label="Sound off">♫ OFF</button></div>
+ </header>
+ <div id="viewport" class="viewport" aria-label="3D character preview"></div>
+ <main class="content">
+  <div class="eyebrow"><span class="line"></span> FPS ONLINE EXPERIENCE <span class="line"></span></div>
+  <div class="slogan">STAND BY<br><em>FOR DEPLOYMENT</em><span class="period">.</span></div>
+  <div class="subtitle">OPERATIVE: <b>ASTRA</b> <span class="rule">/</span> CLASS: ASSAULT</div>
+  <div class="detail">A quiet moment before the match begins. Customize the character’s idle while assets prepare.</div>
+  <section class="load-box" aria-label="Loading status">
+   <div class="load-header"><span id="stage-label">AWAITING GAME PROGRESS</span><strong id="progress-label">0%</strong></div>
+   <div class="track"><div class="fill" id="progress-fill"></div><div class="notch" aria-hidden="true"></div></div>
+   <div class="progress-sub"><span id="asset-status">Initializing 3D character…</span><span class="tag">PREVIEW BUILD</span></div>
+  </section>
+  <div class="tip"><span class="tip-mark">◇</span><div><b>TACTICAL TIP</b><p id="tip-text">Stay aware of angles. Use cover and move with your team.</p></div></div>
+  <div class="controls-panel"><label for="idle-select">CHARACTER ANIMATION</label><select id="idle-select"><option>Loading clips…</option></select><button id="auto-toggle">AUTO: ON</button><button id="demo">▶ TEST LOADING</button></div>
+ </main>
+ <div class="character-tag"><span class="mini-line"></span><b>ASTRA</b><span>OPERATIVE // 001</span><small>DRAG TO ROTATE · SCROLL TO ZOOM</small></div>
+ <footer><span>ASTRA / ANIME FPS CHARACTER STUDY</span><span>WEBGL · THREE.JS · GLTF</span><span>DEMO UI — NOT A LIVE GAME LOAD</span></footer>
+</div>
+<script type="module" src="./main.js"></script>
+</body></html>
